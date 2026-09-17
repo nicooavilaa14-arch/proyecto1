@@ -1,3 +1,7 @@
 guia rapida para navegar:
 
 🔍= navbar
+
+🎠= inicio carrusel
+
+✉️= inico card en main
