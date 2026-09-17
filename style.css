@@ -5,9 +5,13 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+.carousel{
+    margin-top: 90px;
+}
 
 header{
     position:fixed;
+    z-index: 999999999;
     top: 0;
     left: 0;
     width: 100%;
