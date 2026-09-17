@@ -77,3 +77,32 @@ header{
 .imgpublicidad{
     height: 0px;
 }
+/* inicio footer */
+.descripcionfooter{
+   flex-direction: column;
+}
+.containerlogofooter{
+    display: flex;
+    justify-content: center !important;
+}
+.logofooter{
+    width: 40px;
+    height: 40px;
+}
+.containersubscripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footerredes{
+    display: flex;
+    flex-direction: column;
+}
+.redessociales{
+    display: flex;
+    justify-content: center;
+}
+.imgredessociales{
+    width: 30px;
+    height: 30px;
+}
