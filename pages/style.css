@@ -103,9 +103,7 @@ header{
 .menu .text-seleccionado{
     color: aqua;
 }
-.imgpublicidad{
-    height: 0px;
-}
+
 /* inicio footer */
 .descripcionfooter{
    flex-direction: column;
