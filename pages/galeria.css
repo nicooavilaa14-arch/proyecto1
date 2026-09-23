@@ -3,3 +3,712 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* =====================================================
+   1. CONTENEDOR PRINCIPAL
+   ===================================================== */
+
+.gallery-page {
+
+    /* Ocupa todo el ancho disponible */
+    width: 100%;
+
+    /* Color de fondo general */
+    background: #f7f9fc;
+
+    /* Espacio superior */
+    padding-top: 140px;
+
+    /* Espacio inferior */
+    padding-bottom: 0;
+}
+
+
+
+/* =====================================================
+   2. INTRODUCCIÓN
+   ===================================================== */
+
+.gallery-intro {
+
+    /* Ancho máximo del contenido */
+    width: 100%;
+    max-width: 760px;
+
+    /* Centrar horizontalmente */
+    margin: 0 auto;
+
+    /* Espacio lateral */
+    padding: 0 20px;
+
+    /* Centrar textos */
+    text-align: center;
+}
+
+
+
+/* -----------------------------------------------------
+   Etiqueta pequeña encima del título
+   ----------------------------------------------------- */
+
+.gallery-tag {
+
+    /* Permite aplicar padding y dimensiones */
+    display: inline-block;
+
+    /* Espaciado interno */
+    padding: 4px 11px;
+
+    /* Fondo azul muy claro */
+    background: #e9efff;
+
+    /* Texto azul */
+    color: #164da8;
+
+    /* Forma redondeada */
+    border-radius: 20px;
+
+    /* Tamaño del texto */
+    font-size: 9px;
+
+    /* Negrita */
+    font-weight: 700;
+
+    /* Separación entre letras */
+    letter-spacing: 0.8px;
+}
+
+
+
+/* -----------------------------------------------------
+   Título principal
+   ----------------------------------------------------- */
+
+.gallery-intro h1 {
+
+    /* Espaciado */
+    margin: 12px 0 8px;
+
+    /* Color */
+    color: #101828;
+
+    /* Tamaño */
+    font-size: 29px;
+
+    /* Grosor */
+    font-weight: 700;
+
+    /* Altura de línea */
+    line-height: 1.2;
+}
+
+
+
+/* Parte azul del título */
+
+.gallery-intro h1 span {
+    color: #1555b5;
+}
+
+
+
+/* -----------------------------------------------------
+   Descripción
+   ----------------------------------------------------- */
+
+.gallery-intro p {
+
+    /* Ancho máximo */
+    max-width: 650px;
+
+    /* Centrar */
+    margin: 0 auto;
+
+    /* Color gris */
+    color: #667085;
+
+    /* Tamaño */
+    font-size: 12px;
+
+    /* Separación entre líneas */
+    line-height: 1.6;
+}
+
+
+
+/* -----------------------------------------------------
+   Estadísticas debajo de la descripción
+   ----------------------------------------------------- */
+
+.gallery-stats {
+
+    /* Flexbox */
+    display: flex;
+
+    /* Centrar */
+    justify-content: center;
+
+    /* Alinear verticalmente */
+    align-items: center;
+
+    /* Espacio entre elementos */
+    gap: 12px;
+
+    /* Separación superior */
+    margin-top: 12px;
+
+    /* Color */
+    color: #344054;
+
+    /* Tamaño */
+    font-size: 9px;
+}
+
+
+
+/* =====================================================
+   3. FILTROS
+   ===================================================== */
+
+.gallery-filters {
+
+    /* Ancho completo */
+    width: 100%;
+
+    /* Ancho máximo */
+    max-width: 1200px;
+
+    /* Centrar */
+    margin: 35px auto 15px;
+
+    /* Espacio lateral */
+    padding: 0 20px;
+
+    /* Flexbox */
+    display: flex;
+
+    /* Centrar verticalmente */
+    align-items: center;
+
+    /* Separación */
+    gap: 8px;
+
+    /* Permite que los botones bajen */
+    flex-wrap: wrap;
+}
+
+
+
+/* -----------------------------------------------------
+   Botones individuales
+   ----------------------------------------------------- */
+
+.filter {
+
+    /* Espacio interno */
+    padding: 7px 12px;
+
+    /* Quitamos borde */
+    border: none;
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+
+    /* Fondo */
+    background: #ffffff;
+
+    /* Color del texto */
+    color: #475467;
+
+    /* Tamaño */
+    font-size: 9px;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Sombra muy ligera */
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
+}
+
+
+
+/* -----------------------------------------------------
+   Botón seleccionado
+   ----------------------------------------------------- */
+
+.filter.active {
+
+    /* Fondo azul */
+    background: #1555b5;
+
+    /* Texto blanco */
+    color: #ffffff;
+}
+
+
+
+/* =====================================================
+   4. CONTENEDOR DE LA GALERÍA
+   ===================================================== */
+
+.gallery-grid {
+
+    /* Ancho completo */
+    width: 100%;
+
+    /* Ancho máximo */
+    max-width: 1200px;
+
+    /* Centrar */
+    margin: 0 auto;
+
+    /* Espacio inferior y lateral */
+    padding: 0 20px 40px;
+
+    /* Activamos Grid */
+    display: grid;
+
+    /* 4 columnas */
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    /* Espacio entre tarjetas */
+    gap: 18px;
+}
+
+
+
+/* =====================================================
+   5. TARJETAS DE LA GALERÍA
+   ===================================================== */
+
+.art-card {
+
+    /* Necesario para posicionar elementos
+       encima de la imagen */
+    position: relative;
+
+    /* Oculta lo que sobresalga */
+    overflow: hidden;
+
+    /* Fondo blanco */
+    background: #ffffff;
+
+    /* Borde */
+    border: 1px solid #e4e7ec;
+
+    /* Bordes redondeados */
+    border-radius: 9px;
+
+    /* Sombra ligera */
+    box-shadow:
+        0 1px 3px rgba(16, 24, 40, 0.03);
+
+    /* Animación */
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+
+/* -----------------------------------------------------
+   Efecto cuando pasamos el mouse
+   ----------------------------------------------------- */
+
+.art-card:hover {
+
+    /* La tarjeta sube un poco */
+    transform: translateY(-3px);
+
+    /* Aparece una sombra */
+    box-shadow:
+        0 8px 20px rgba(16, 24, 40, 0.08);
+}
+
+
+
+/* =====================================================
+   6. IMÁGENES
+   ===================================================== */
+
+.art-card img {
+
+    /* Evita espacios extra debajo de imágenes */
+    display: block;
+
+    /* Ocupa todo el ancho */
+    width: 100%;
+
+    /* La imagen se adapta al contenedor */
+    object-fit: cover;
+
+
+}
+
+
+
+/* =====================================================
+   7. ALTURA DE LAS IMÁGENES
+   ===================================================== */
+
+/*
+   Aquí hacemos que algunas imágenes sean
+   más altas que otras para parecerse
+   al diseño de la imagen de referencia.
+*/
+
+
+/* Imagen 1 */
+.art-card:nth-child(1) img {
+    height: 300px;
+}
+
+
+/* Imagen 2 */
+.art-card:nth-child(2) img {
+    height: 285px;
+}
+
+
+/* Imagen 3 */
+.art-card:nth-child(3) img {
+    height: 300px;
+}
+
+
+/* Imagen 4 */
+.art-card:nth-child(4) img {
+    height: 300px;
+}
+
+
+/* Imagen 5 */
+.art-card:nth-child(5) img {
+    height: 300px;
+}
+
+
+/* Imagen 6 */
+.art-card:nth-child(6) img {
+    height: 300px;
+}
+
+
+/* Imagen 7 */
+.art-card:nth-child(7) img {
+    height: 300px;
+}
+
+
+/* Imagen 8 */
+.art-card:nth-child(8) img {
+    height: 296px;
+}
+
+
+
+/* =====================================================
+   8. INFORMACIÓN DE LAS OBRAS
+   ===================================================== */
+
+.art-info {
+
+    /* Espacio interno */
+    padding: 10px;
+}
+
+
+
+/* -----------------------------------------------------
+   Categoría + fecha
+   ----------------------------------------------------- */
+
+.art-meta {
+
+    /* Flexbox */
+    display: flex;
+
+    /* Separar los elementos */
+    justify-content: space-between;
+
+    /* Alinear verticalmente */
+    align-items: center;
+
+    /* Espacio inferior */
+    margin-bottom: 6px;
+
+    /* Color gris */
+    color: #98a2b3;
+
+    /* Tamaño */
+    font-size: 8px;
+}
+
+
+
+/* -----------------------------------------------------
+   Etiqueta de categoría
+   ----------------------------------------------------- */
+
+.category {
+
+    /* Para poder darle padding */
+    display: inline-block;
+
+    /* Espaciado */
+    padding: 3px 7px;
+
+    /* Fondo */
+    background: #eef3ff;
+
+    /* Color */
+    color: #344054;
+
+    /* Redondeado */
+    border-radius: 8px;
+
+    /* Tamaño */
+    font-size: 7px;
+
+    /* Negrita */
+    font-weight: 700;
+
+    /* Separación de letras */
+    letter-spacing: 0.5px;
+}
+
+
+
+/* -----------------------------------------------------
+   Título de la obra
+   ----------------------------------------------------- */
+
+.art-info h2 {
+
+    /* Margen */
+    margin: 0 0 5px;
+
+    /* Color */
+    color: #101828;
+
+    /* Tamaño */
+    font-size: 13px;
+
+    /* Grosor */
+    font-weight: 600;
+
+    /* Altura */
+    line-height: 1.3;
+}
+
+
+
+/* -----------------------------------------------------
+   Descripción de la obra
+   ----------------------------------------------------- */
+
+.art-info p {
+
+    /* Margen */
+    margin: 0 0 12px;
+
+    /* Color */
+    color: #667085;
+
+    /* Tamaño */
+    font-size: 9px;
+
+    /* Altura */
+    line-height: 1.5;
+}
+
+
+
+/* -----------------------------------------------------
+   Información inferior
+   ----------------------------------------------------- */
+
+.art-bottom {
+
+    /* Flexbox */
+    display: flex;
+
+    /* Separar izquierda y derecha */
+    justify-content: space-between;
+
+    /* Separación */
+    gap: 5px;
+
+    /* Espacio superior */
+    padding-top: 8px;
+
+    /* Línea superior */
+    border-top: 1px solid #f0f2f5;
+
+    /* Color */
+    color: #98a2b3;
+
+    /* Tamaño */
+    font-size: 7px;
+}
+
+
+
+/* =====================================================
+   9. ETIQUETA ENCIMA DE UNA IMAGEN
+   ===================================================== */
+
+.image-label {
+
+    /* Posición absoluta */
+    position: absolute;
+
+    /* Distancia desde arriba */
+    top: 9px;
+
+    /* Distancia desde izquierda */
+    left: 9px;
+
+    /* Espacio interno */
+    padding: 5px 8px;
+
+    /* Fondo oscuro transparente */
+    background: rgba(25, 45, 65, 0.75);
+
+    /* Texto blanco */
+    color: #ffffff;
+
+    /* Redondeado */
+    border-radius: 12px;
+
+    /* Tamaño */
+    font-size: 8px;
+
+    /* Efecto de desenfoque */
+    backdrop-filter: blur(4px);
+}
+
+
+
+/* =====================================================
+   10. TARJETAS QUE SOLO TIENEN IMAGEN
+   ===================================================== */
+
+.image-only {
+
+    /* Fondo transparente */
+    background: transparent;
+
+    /* Sin borde */
+    border: none;
+
+    /* Sin sombra */
+    box-shadow: none;
+}
+
+
+
+/* Quitamos sombra al pasar el mouse */
+
+.image-only:hover {
+    box-shadow: none;
+}
+
+
+
+/* Redondeamos directamente la imagen */
+
+.image-only img {
+    border-radius: 9px;
+}
+
+
+
+/* =====================================================
+   11. FRASE FINAL
+   ===================================================== */
+
+.quote {
+
+    /* Ancho completo */
+    width: 100%;
+
+    /* Espaciado */
+    padding: 35px 20px;
+
+    /* Fondo azul muy claro */
+    background: #eef4ff;
+
+    /* Centrar contenido */
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* -----------------------------------------------------
+   Símbolo "99"
+   ----------------------------------------------------- */
+
+.quote-symbol {
+
+    /* Espacio inferior */
+    margin-bottom: 10px;
+
+    /* Azul */
+    color: #1555b5;
+
+    /* Tamaño */
+    font-size: 25px;
+
+    /* Negrita */
+    font-weight: 700;
+}
+
+
+
+/* -----------------------------------------------------
+   Texto de la frase
+   ----------------------------------------------------- */
+
+.quote p {
+
+    /* Ancho máximo */
+    max-width: 650px;
+
+    /* Centrar */
+    margin: 0 auto 10px;
+
+    /* Color */
+    color: #101828;
+
+    /* Tamaño */
+    font-size: 11px;
+
+    /* Cursiva */
+    font-style: italic;
+
+    /* Altura */
+    line-height: 1.6;
+}
+
+
+
+/* -----------------------------------------------------
+   Autor de la frase
+   ----------------------------------------------------- */
+
+.quote span {
+
+    /* Color gris */
+    color: #667085;
+
+    /* Tamaño pequeño */
+    font-size: 7px;
+
+    /* Separación de letras */
+    letter-spacing: 0.5px;
+}
+
