@@ -3,3 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: auto;
+    height: auto;
+}
+.contenedorimgerror404{
+    justify-content: center;
+    display: flex;
+    padding-top: 70px;
+}
+.tituloerror404{
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+}
+.descripcionerror404{
+    justify-content: center;
+    display: flex;  
+}
+.btnerror404{
+    display: flex;
+    justify-content: center;
+}
+.botonerror404{
+    background-color: var(--primary-blue);
+}
+.linkerror404{
+    color: white;
+}
+.footererror404{
+    padding-top: 70px;
+}
