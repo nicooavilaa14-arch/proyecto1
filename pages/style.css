@@ -1,3 +1,28 @@
+:root {
+    /* RECUADRO PRIMARY */
+    --primary: #0B17A7;
+    --primary-dark: #071366;
+    --primary-blue: #123BE0;
+    --primary-cyan: #4F8FD7;
+
+    /* RECUADRO SECONDARY */
+    --secondary: #16264A;
+    --secondary-dark: #102144;
+    --secondary-blue: #263B68;
+    --secondary-light: #A4BCD4;
+
+    /* RECUADRO TERTIARY */
+    --tertiary: #0793EA;
+    --tertiary-blue: #1196E7;
+    --tertiary-light: #37B1FA;
+    --tertiary-pale: #B7DDF0;
+
+    /* RECUADRO NEUTRAL */
+    --neutral: #AAC7D0;
+    --neutral-blue: #7488AB;
+    --neutral-dark: #5C7197;
+    --neutral-light: #879FBB;
+}
 *{
     padding: 0;
     margin: 0;

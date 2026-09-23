@@ -3,3 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+.imgentradadeblog{
+    width: 96vw;
+}
+.contenedorimgblog{
+    display: flex;
+    justify-content: center;
+}
+.descripcionentradadeblog{
+    padding: 20px;
+}
+.contenedorcomentarios{
+    padding-left: 20px;
+}
+.cajadecomentarios{
+    width: 95vw;
+    height: 80px;
+}
+.cajabotoncomentarios{
+    margin-top: 10px;
+    text-align: end;
+    width: 95vw;
+}
+.btncomentarios{
+    height: 40px;
+    width: 70px;
+}
