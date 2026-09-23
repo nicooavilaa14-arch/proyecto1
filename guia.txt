@@ -4,4 +4,10 @@ guia rapida para navegar:
 
 🎠= inicio carrusel
 
-✉️= inico card en main
+✉️= inicio card en main
+
+👣=inicio del footer
+
+
+en galleria:
+🖼️= para el cuerpo de galleria 
