@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./entrada.css">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
@@ -35,37 +34,134 @@
    <!-- inicio entrada de blog 🗒-->
 <div>
     <div class="contenedorimgblog">
-        <img class="imgentradadeblog" src="../assets/images/descarga.jpg" alt="">
+        <img class="imgentradadeblog" src="../assets/images/imagenes_galleria/catarratas2.jpeg" alt="">
     </div>
     <div class="descripcionentradadeblog">
-        <h1>El futuro de la IA en el desarrollo web</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, britaque doloremque temporibus ipsa deserunt omnis non nobis autem vero enim culpa fugit ducimus harum eos at cum qui eaque saepe?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam unde aliquam quas perspiciatis aperiam, dolorem magni. Minus, doloribus provident. Voluptatem aspernatur natus commodi numquam explicabo voluptate dolor cumque nihil.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid architecto perferendis accusantium, expedita nulla earum corporis autem dolore quas commodi deleniti! Dolor quaerat accusamus eos architecto saepe voluptatibus fuga quisquam?
+        <h1>Guía definitiva para visitar las Cataratas del Iguazú: Magia en estado puro</h1>
+        <p> 
+          Existe un lugar en el mundo donde la tierra ruge y el agua se convierte en un espectáculo que te deja sin aliento. Hablamos de las Cataratas del Iguazú, una de las Siete Maravillas Naturales del Mundo y, sin duda, un destino que todo viajero debe pisar al menos una vez en la vida.
+          Si estás planeando tu próxima escapada a este paraíso selvático, prepárate para mojarte, caminar entre arcoíris y conectar con la naturaleza de una forma que nunca imaginaste.
         </p>
-    </div>
-    <div class="descripcionentradadeblog" >
+   </div>
+   <div class="descripcion2entradadeblog">
+    <h2>🎒 ¿Vale la pena el viaje?</h2>
+        <p>Absolutamente, sí. Pocos lugares en el planeta transmiten tanta fuerza y vitalidad como Iguazú. No importa si viajas solo, en pareja o en familia; la energía que se respira en este rincón de la selva te renueva por completo.
+          Prepara la mochila, lleva el calzado más cómodo que tengas y prepárate para conectar con el lado más salvaje y hermoso de la naturaleza. ¡Buen viaje!
+        </p>
+   </div>
+   <div class="cajacomentarios">
+      <div class="titulo">
         <h2>comentarios</h2>
+      </div>
+      <form action="#" class="formulario">
+         <div class="filadedatos">
+            <div class="requeridocomentario">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="tu nombre completo" required>
+            </div> 
+            <div class="requeridocomentario">
+              <label for="emailcomentario">Email</label>
+              <input type="email" id="emailcomentario" name="emailcomentario" placeholder="correo@gmail.com" required>
+            </div> 
+         </div>
+         <div class="requeridocomentario">
+              <label for="comentario">comentario</label>
+              <textarea class="textareacomentario" name="comentario" id="comentaro" rows="5" placeholder="escribi tu comentario aqui"required></textarea>
+          </div> 
+          <div class="requeridocomentario">
+              <button  type="submit " class="botoncomentarios">Enviar Comentario</button>
+          </div> 
+
+      </form>
+   </div>
+   
+   <!-- Seccion de comentarios visibles -->
+<div class="listacomentarios">
+  <h3 class="subtitulo">Comentarios (5)</h3>
+
+  <!-- Comentario 1 -->
+  <div class="tarjetacomentario">
+    <div >
+      <img class="imgcomentario" src="../assets/images/comentarios/descarga.jpg" alt="Avatar Juan">
     </div>
-    <div class="contenedorcomentarios" >
-        <div>
-        <input class="cajadecomentarios" type="text" placeholder="deja tu comentario">
-        </div>
-        <div class="cajabotoncomentarios">
-            <button class="btncomentarios" >enviar</button>
-        </div>
+    <div class="contenidocomentario">
+      <div class="titulocomentario">
+        <span class="nombreusuario">Juan García</span>
+        <span class="fechacomentario">Hace 2 horas</span>
+      </div>
+      <p class="textocomentario">¡Increíble! La Garganta del Diablo es impresionante, la fuerza del agua te deja sin palabras. 🌊</p>
     </div>
+  </div>
+
+  <!-- Comentario 2 -->
+  <div class="tarjetacomentario">
+    <div >
+      <img class="imgcomentario" src="../assets/images/comentarios/descarga (4).jpg" alt="Avatar Ana">
+    </div>
+    <div class="contenidocomentario">
+      <div class="titulocomentario">
+        <span class="nombreusuario">Ana Martínez</span>
+        <span class="fechacomentario">Hace 3 horas</span>
+      </div>
+      <p class="textocomentario">Destino obligatorio. El parque está impecable y los paisajes parecen de película. ¡Hay que ir sí o sí! 🤩</p>
+    </div>
+  </div>
+
+  <!-- Comentario 3 -->
+  <div class="tarjetacomentario">
+    <div >
+      <img class="imgcomentario" src="../assets/images/comentarios/descarga (3).jpg" alt="Avatar Carlos">
+    </div>
+    <div class="contenidocomentario">
+      <div class="titulocomentario">
+        <span class="nombreusuario">Carlos Rodríguez</span>
+        <span class="fechacomentario">Hace 4 horas</span>
+      </div>
+      <p class="textocomentario">Sencillamente espectacular. Es la segunda vez que visito las Cataratas y no me canso</p>
+    </div>
+  </div>
+
+  <!-- Comentario 4 -->
+  <div class="tarjetacomentario">
+    <div >
+      <img class="imgcomentario" src="../assets/images/comentarios/descarga (2).jpg" alt="Avatar Sofía">
+    </div>
+    <div class="contenidocomentario">
+      <div class="titulocomentario">
+        <span class="nombreusuario">Sofía López</span>
+        <span class="fechacomentario">Hace 1 día</span>
+      </div>
+      <p class="textocomentario">Mágico. Caminar entre tanta vegetación y escuchar el rugido del agua es una locura.</p>
+    </div>
+  </div>
+
+  <!-- Comentario 5 -->
+  <div class="tarjetacomentario">
+    <div >
+      <img class="imgcomentario" src="../assets/images/comentarios/descarga (1).jpg" alt="Avatar Pedro">
+    </div>
+    <div class="contenidocomentario">
+      <div class="titulocomentario">
+        <span class="nombreusuario">Pedro Pérez</span>
+        <span class="fechacomentario">Hace 2 días</span>
+      </div>
+      <p class="textocomentario">Inolvidable. Hermoso viaje familiar. Vayan con calzado cómodo porque se camina un montón.</p>
+    </div>
+  </div>
+</div>
+
 
 </div>
 
     <!-- fin entrada de blog 🗒 -->
 
-    <!-- inicio foter -->
+   <!--👣 inicio foter -->
+<footer>
  <div class=" container-fluid text-center">
   <div class="row">
     <div class="col-4  ">
       <div class="containerlogofooter">
-        <img class="logofooter" src="./assets/images.jpg" alt="">
+        <img class="logofooter" src="../assets/images.jpg" alt="">
       <h2>ECOVIDA</h2> 
       </div>
       <div class="descripcionfooter">
@@ -120,5 +216,7 @@
       <p>© 2026 ECOVIDA - todos los derechos reservados</p>
     </div>
 </div>
+</footer>
+<!-- final foter 👣-->
 </body>
 </html>
