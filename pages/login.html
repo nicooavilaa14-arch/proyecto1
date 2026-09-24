@@ -33,7 +33,7 @@
    <!--fin navbar 🔍-->
 
 
-<body>
+
 <!-- login pages📋-->
 <main class="login-page">
 
@@ -85,7 +85,7 @@
 
             <!--FORMULARIO -->
 
-            <form action="administracion.html" method="get">
+            <form action="index.html" method="get">
 
                 <div class="form-group">
 
@@ -369,7 +369,7 @@
 
                     <p>
                         Sigue el enlace recibido y crea
-                        una nueva contraseña.
+                        una nueva contraseña y vuele a cargar datos
                     </p>
 
                 </div>
@@ -381,22 +381,38 @@
 
             <div class="recovery-form">
 
-                <label for="recovery-email">
-                    Correo electrónico
-                </label>
+              
+                <form action="login.html" method="get">
 
-                <input
-                    type="email"
-                    id="recovery-email"
-                    placeholder="admin@chronicle.blog"
-                >
+                <div class="form-group">
 
-            </div>
+                    <div class="label-row">
 
+                        <label for="email">
+                            Correo electrónico
+                        </label>
+                    </div>
 
-            <a href="#" class="recovery-btn">
-                Enviar instrucciones
-            </a>
+                    <div class="input-wrapper">
+                       <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ponga su correo electrónico aquí"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+               <br>
+                <button type="submit" class="login-btn2">
+
+                    recuperar contraseña
+
+                    <span>→</span>
+
+                </button>
 
 
             <a href="#" class="back-login">
