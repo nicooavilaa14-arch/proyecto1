@@ -3,3 +3,1000 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #172033;
+}
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main{
+    margin-top: 100px;
+}
+
+.login-page {
+    min-height: 100vh;
+    padding: 40px 35px;
+    background: #f7f8fc;
+}
+
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+========================================== */
+
+.login-container {
+    width: 100%;
+    max-width: 1320px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 42px;
+}
+
+
+/* ==========================================
+   TARJETA LOGIN
+========================================== */
+
+.login-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e8ef;
+    border-radius: 16px;
+
+    padding: 42px;
+
+    box-shadow:
+        0 5px 20px rgba(30, 50, 90, 0.04);
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.admin-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #e5efff;
+
+    color: #1457bd;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login-header h1 {
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+    font-size: 34px;
+
+    color: #111b2e;
+}
+
+.login-header p {
+    max-width: 580px;
+
+    color: #5c6575;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   LOGIN SOCIAL
+========================================== */
+
+.social-login {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+.social-btn {
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 9px;
+
+    background: #edf2fc;
+
+    color: #161d29;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.social-btn:hover {
+    background: #e2e9f8;
+}
+
+
+/* GOOGLE */
+
+.google-icon {
+    color: #4285f4;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* FACEBOOK */
+
+.facebook-icon {
+    width: 21px;
+    height: 21px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1877f2;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   SEPARADOR
+========================================== */
+
+.separator {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 28px 0 20px;
+
+    color: #737a86;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #dfe3eb;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #171e2a;
+}
+
+.label-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.label-row span {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 45px;
+
+    border: 1px solid transparent;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #edf2fc;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.input-wrapper input:focus {
+    border-color: #2864df;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 100, 223, 0.10);
+}
+
+.input-wrapper input::placeholder {
+    color: #9ca5b5;
+}
+
+.input-icon {
+    position: absolute;
+
+    left: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #6d7687;
+
+    z-index: 2;
+}
+
+
+/* ==========================================
+   OPCIONES
+========================================== */
+
+.form-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 25px;
+}
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #303746;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.remember input {
+    width: 17px;
+    height: 17px;
+}
+
+.forgot-password {
+    color: #0755bd;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   BOTÓN LOGIN
+========================================== */
+
+.login-btn {
+    width: 100%;
+
+    height: 46px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #164da8;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.login-btn:hover {
+    background: #1e55c4;
+}
+
+.login-btn span {
+    font-size: 20px;
+}
+
+
+/* ==========================================
+   SOPORTE
+========================================== */
+
+.support {
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border-radius: 9px;
+
+    background: #edf2fc;
+
+    text-align: center;
+
+    color: #3f4756;
+
+    font-size: 12px;
+}
+
+.support a {
+    color: #0755bd;
+
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   IMAGEN
+========================================== */
+
+.login-visual {
+    position: relative;
+
+    min-height: 670px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: #172333;
+}
+
+.login-visual img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.login-visual::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 25, 40, 0.05),
+        rgba(10, 25, 42, 0.60)
+    );
+}
+
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.status-badge,
+.growth-badge {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 42px;
+
+    padding: 9px 16px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.93);
+
+    color: #222833;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.status-badge {
+    left: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #18b98a;
+}
+
+.growth-badge {
+    right: 42px;
+}
+
+
+/* ==========================================
+   TARJETA SOBRE IMAGEN
+========================================== */
+
+.visual-card {
+    position: absolute;
+
+    z-index: 3;
+
+    left: 42px;
+    right: 42px;
+    bottom: 42px;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.quote {
+    display: flex;
+
+    gap: 10px;
+}
+
+.quote > span {
+    color: #0755bd;
+
+    font-size: 30px;
+}
+
+.quote p {
+    color: #222936;
+
+    font-size: 19px;
+
+    font-weight: 500;
+}
+
+.visual-description {
+    margin: 16px 0 18px;
+
+    padding-left: 40px;
+
+    color: #485161;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   ESTADÍSTICAS
+========================================== */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    background: #edf2fc;
+}
+
+.statistics div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.statistics span {
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: #353c49;
+}
+
+.statistics strong {
+    color: #0755bd;
+
+    font-size: 23px;
+}
+
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal {
+    position: fixed;
+
+    z-index: 1000;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(10, 20, 35, 0.65);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.25s;
+}
+
+
+/*
+    Cuando hacemos clic en:
+
+    #recuperar
+
+    el navegador cambia la URL a:
+
+    pagina.html#recuperar
+
+    :target detecta ese cambio.
+*/
+
+.modal:target {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* ==========================================
+   CONTENIDO MODAL
+========================================== */
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 35px;
+
+    border-radius: 17px;
+
+    background: white;
+
+    box-shadow:
+        0 20px 70px rgba(0, 0, 0, 0.25);
+
+    transform: translateY(20px);
+
+    transition: 0.25s;
+}
+
+.modal:target .modal-content {
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   CERRAR MODAL
+========================================== */
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #687183;
+
+    font-size: 25px;
+
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    background: #edf2fc;
+
+    color: #111827;
+}
+
+
+/* ==========================================
+   ICONO MODAL
+========================================== */
+
+.recovery-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 13px;
+
+    background: #e8f0ff;
+
+    font-size: 22px;
+}
+
+.modal-content h2 {
+    margin-bottom: 8px;
+
+    color: #111c30;
+
+    font-size: 25px;
+}
+
+.modal-description {
+    margin-bottom: 25px;
+
+    color: #687183;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   PASOS
+========================================== */
+
+.step {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 20px;
+}
+
+.step-number {
+    flex-shrink: 0;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8f0ff;
+
+    color: #0755bd;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.step h3 {
+    margin-bottom: 4px;
+
+    color: #252c39;
+
+    font-size: 14px;
+}
+
+.step p {
+    color: #6b7483;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   RECUPERACIÓN
+========================================== */
+
+.recovery-form {
+    margin-top: 25px;
+
+    margin-bottom: 16px;
+}
+
+.recovery-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #252c39;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.recovery-form input {
+    width: 100%;
+
+    height: 44px;
+
+    padding: 0 13px;
+
+    border: 1px solid #dce1e9;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+.recovery-form input:focus {
+    border-color: #2864df;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 100, 223, 0.1);
+}
+
+
+/* ==========================================
+   BOTÓN RECUPERAR
+========================================== */
+
+.recovery-btn {
+    width: 100%;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #2864df;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.recovery-btn:hover {
+    background: #1e55c4;
+}
+
+
+/* ==========================================
+   VOLVER
+========================================== */
+
+.back-login {
+    display: block;
+
+    margin-top: 17px;
+
+    color: #0755bd;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+.back-login:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .login-container {
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+    }
+
+    .login-visual {
+        min-height: 550px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 20px 15px;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 28px;
+    }
+
+    .social-login {
+        grid-template-columns: 1fr;
+    }
+
+    .form-options {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 13px;
+    }
+
+    .login-visual {
+        min-height: 500px;
+    }
+
+    .status-badge {
+        top: 20px;
+        left: 20px;
+    }
+
+    .growth-badge {
+        top: 20px;
+        right: 20px;
+    }
+
+    .visual-card {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+
+        padding: 20px;
+    }
+
+    .quote p {
+        font-size: 17px;
+    }
+
+    .visual-description {
+        padding-left: 0;
+    }
+
+    .modal-content {
+        padding: 28px 22px;
+    }
+
+}
