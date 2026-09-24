@@ -11,3 +11,6 @@ guia rapida para navegar:
 
 en galleria:
 🖼️= para el cuerpo de galleria 
+
+en login:
+📋=para el cuerpo del login
