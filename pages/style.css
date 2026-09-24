@@ -30,6 +30,7 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+/* inicio navbar  */
 .carousel{
     margin-top: 90px;
 }
@@ -104,6 +105,7 @@ header{
 .menu .text-seleccionado{
     color: #164da8;
 }
+/* fin navbar */
 
 /* inicio footer */
 footer{
@@ -155,3 +157,4 @@ footer{
     padding-top: 20px;
     margin-top: 20px;
 }
+/* fin footer */
