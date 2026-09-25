@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
     background: #f7f8fc;
     color: #172033;
 }
@@ -17,7 +17,7 @@ body {
 ========================================== */
 
 main{
-    margin-top: 100px;
+    margin-top: 82px;
 }
 
 .login-page {
@@ -393,9 +393,7 @@ main{
 }
 
 
-/* ==========================================
-   SOPORTE
-========================================== */
+/* SOPORTE*/
 
 .support {
     margin-top: 25px;
@@ -420,9 +418,7 @@ main{
 }
 
 
-/* ==========================================
-   IMAGEN
-========================================== */
+/* IMAGEN*/
 
 .login-visual {
     position: relative;
@@ -567,9 +563,7 @@ main{
 }
 
 
-/* ==========================================
-   ESTADÍSTICAS
-========================================== */
+/* ESTADÍSTICAS*/
 
 .statistics {
     display: grid;
@@ -613,9 +607,9 @@ main{
 ========================================== */
 
 .modal {
-    position: fixed;
+    position: absolute;
 
-    z-index: 1000;
+    z-index: 99999999999999999999999999999;
 
     inset: 0;
 
@@ -624,7 +618,9 @@ main{
     align-items: center;
     justify-content: center;
 
-    padding: 20px;
+    margin-top: 80px;
+
+    padding: 100px;
 
     background: rgba(10, 20, 35, 0.65);
 
@@ -649,9 +645,11 @@ main{
 */
 
 .modal:target {
-    opacity: 1;
+    opacity: 1 !important;
 
-    visibility: visible;
+    visibility: visible !important;
+
+    display: flex !important;
 }
 
 
@@ -670,7 +668,7 @@ main{
 
     overflow-y: auto;
 
-    padding: 35px;
+    padding: 30px;
 
     border-radius: 17px;
 
@@ -685,7 +683,7 @@ main{
 }
 
 .modal:target .modal-content {
-    transform: translateY(0);
+    transform: translateY(0) !important;
 }
 
 
@@ -816,81 +814,39 @@ main{
     line-height: 1.5;
 }
 
-
-/* ==========================================
-   RECUPERACIÓN
-========================================== */
-
-.recovery-form {
-    margin-top: 25px;
-
-    margin-bottom: 16px;
-}
-
-.recovery-form label {
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: #252c39;
-
-    font-size: 13px;
-
-    font-weight: bold;
-}
-
-.recovery-form input {
+.login-btn2{
+    
     width: 100%;
 
-    height: 44px;
-
-    padding: 0 13px;
-
-    border: 1px solid #dce1e9;
-
-    border-radius: 8px;
-
-    outline: none;
-
-    font-size: 13px;
-}
-
-.recovery-form input:focus {
-    border-color: #2864df;
-
-    box-shadow:
-        0 0 0 3px rgba(40, 100, 223, 0.1);
-}
-
-
-/* ==========================================
-   BOTÓN RECUPERAR
-========================================== */
-
-.recovery-btn {
-    width: 100%;
-
-    height: 44px;
+    height: 46px;
 
     display: flex;
 
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+    border: none;
 
     border-radius: 8px;
 
-    background: #2864df;
+    background: #164da8;
 
     color: white;
 
-    text-decoration: none;
-
-    font-size: 13px;
+    font-size: 14px;
 
     font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.2s;
 }
 
-.recovery-btn:hover {
+.login-btn2:hover {
     background: #1e55c4;
 }
 
@@ -902,7 +858,7 @@ main{
 .back-login {
     display: block;
 
-    margin-top: 17px;
+    margin-top: 25px;
 
     color: #0755bd;
 
@@ -910,7 +866,7 @@ main{
 
     text-decoration: none;
 
-    font-size: 13px;
+    font-size: 15px;
 
     font-weight: 500;
 }
