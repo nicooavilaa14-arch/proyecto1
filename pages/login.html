@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="login.css">
      <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
        <!--🔍 inicio navbar-->
    <header>
     <div class="header-contenido">
         <div class="logo">
-            <h1>viajes<b>globales</b></h1>
+            <h1>Viajes<b>Globales</b></h1>
         </div>
 
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="./galeria.html">galleria</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contacto</a></li>
-                    <li class="menu-seleccionado"><a href="./login.html" class="text-seleccionado">suscripción</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="menu-seleccionado"><a href="./login.html" class="text-seleccionado">Suscripción</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,15 +33,13 @@
    <!--fin navbar 🔍-->
 
 
-<body>
+
 <!-- login pages📋-->
 <main class="login-page">
 
     <section class="login-container">
 
-        <!-- =========================
-             FORMULARIO
-        ========================== -->
+        <!--FORMULARIO -->
 
         <div class="login-card">
 
@@ -60,9 +59,7 @@
             </div>
 
 
-            <!-- =========================
-                 LOGIN GOOGLE / FACEBOOK
-            ========================== -->
+            <!--LOGIN GOOGLE / FACEBOOK -->
 
             <div class="social-login">
 
@@ -79,20 +76,16 @@
             </div>
 
 
-            <!-- =========================
-                 SEPARADOR
-            ========================== -->
+            <!--SEPARADOR-->
 
             <div class="separator">
                 <span>O CONTINÚA CON CORREO ELECTRÓNICO</span>
             </div>
 
 
-            <!-- =========================
-                 FORMULARIO
-            ========================== -->
+            <!--FORMULARIO -->
 
-            <form action="administracion.html" method="get">
+            <form action="index.html" method="get">
 
                 <div class="form-group">
 
@@ -146,9 +139,7 @@
                 </div>
 
 
-                <!-- =========================
-                     OPCIONES
-                ========================== -->
+                <!--OPCIONES -->
 
                 <div class="form-options">
 
@@ -174,9 +165,7 @@
                 </div>
 
 
-                <!-- =========================
-                     BOTÓN LOGIN
-                ========================== -->
+                <!--BOTÓN LOGIN-->
 
                 <button type="submit" class="login-btn">
 
@@ -189,9 +178,7 @@
             </form>
 
 
-            <!-- =========================
-                 SOPORTE
-            ========================== -->
+            <!--SOPORTE-->
 
             <div class="support">
 
@@ -207,9 +194,7 @@
         </div>
 
 
-        <!-- =========================
-             IMAGEN DERECHA
-        ========================== -->
+        <!--IMAGEN DERECHA-->
 
         <div class="login-visual">
 
@@ -291,9 +276,7 @@
     </section>
 
 
-    <!-- =====================================
-         MODAL RECUPERAR CONTRASEÑA
-    ====================================== -->
+    <!--MODAL RECUPERAR CONTRASEÑA-->
 
     <div id="recuperar" class="modal">
 
@@ -386,7 +369,7 @@
 
                     <p>
                         Sigue el enlace recibido y crea
-                        una nueva contraseña.
+                        una nueva contraseña y vuele a cargar datos
                     </p>
 
                 </div>
@@ -398,22 +381,38 @@
 
             <div class="recovery-form">
 
-                <label for="recovery-email">
-                    Correo electrónico
-                </label>
+              
+                <form action="login.html" method="get">
 
-                <input
-                    type="email"
-                    id="recovery-email"
-                    placeholder="admin@chronicle.blog"
-                >
+                <div class="form-group">
 
-            </div>
+                    <div class="label-row">
 
+                        <label for="email">
+                            Correo electrónico
+                        </label>
+                    </div>
 
-            <a href="#" class="recovery-btn">
-                Enviar instrucciones
-            </a>
+                    <div class="input-wrapper">
+                       <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ponga su correo electrónico aquí"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+               <br>
+                <button type="submit" class="login-btn2">
+
+                    Recuperar contraseña
+
+                    <span>→</span>
+
+                </button>
 
 
             <a href="#" class="back-login">
@@ -425,9 +424,6 @@
     </div>
 
 </main>
-
-</body>
-</html>
    
 <!--👣 inicio foter -->
 <footer>
@@ -435,7 +431,7 @@
   <div class="row">
     <div class="col-4  ">
       <div class="containerlogofooter">
-        <img class="logofooter" src="./assets/images.jpg" alt="">
+        <img class="logofooter" src="../assets/images/imagen login/logoviajesglobales-removebg-preview.png" alt="">
       <h2>ECOVIDA</h2> 
       </div>
       <div class="descripcionfooter">
