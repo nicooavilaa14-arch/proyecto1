@@ -161,3 +161,9 @@ footer{
     margin-top: 20px;
 }
 /* fin footer */
+.linkvermas{
+    text-decoration: none;
+}
+.linkvermas:hover{
+    color: white !important;
+}
