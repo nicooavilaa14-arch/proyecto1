@@ -34,3 +34,61 @@ body{
 .footererror404{
     padding-top: 70px;
 }
+@media (max-width: 576px) {
+    
+    .contenedorimgerror404 img {
+        max-width: 85%;
+        height: auto;
+    }
+    
+
+    .tituloerror404 h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    
+    .descripcionerror404 p {
+        text-align: center;
+        padding: 0 20px;
+        font-size: 0.95rem;
+    }
+
+
+    .contenedorimgerror404 {
+        padding-top: 40px;
+    }
+    .tituloerror404 {
+        padding-top: 25px;
+    }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+    
+    .contenedorimgerror404 img {
+        max-width: 50%;
+        height: auto;
+    }
+    
+    
+    .tituloerror404 h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 30px;
+    }
+    
+    
+    .descripcionerror404 p {
+        text-align: center;
+        padding: 0 40px;
+        font-size: 1.1rem;
+    }
+
+    
+    .contenedorimgerror404 {
+        padding-top: 60px;
+    }
+    .tituloerror404 {
+        padding-top: 35px;
+    }
+}

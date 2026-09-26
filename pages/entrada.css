@@ -70,7 +70,7 @@
     resize: vertical;
     min-height: 100px;
 }
-/* fin caja comentarios */
+
 .listacomentarios {
   width: 100%;
   margin: 30px auto;
@@ -87,7 +87,7 @@
   margin-bottom: 8px;
 }
 
-/* Tarjeta individual de cada comentario */
+
 .tarjetacomentario {
   background-color: #ffffff;
   border: 1px solid #cbd5e0;
@@ -99,7 +99,7 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Foto o Avatar del usuario */
+
 .imgcomentario{
   width: 48px;
   height: 48px;
@@ -107,14 +107,14 @@
   object-fit: cover;
 }
 
-/* Bloque contenedor del texto */
+
 .contenidocomentario {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-/* Nombre y fecha alineados */
+
 .titulocomentario {
   display: flex;
   justify-content: space-between;
@@ -142,4 +142,69 @@
 }
 footer{
     margin-top: 50px;
+}
+@media (min-width: 577px) and (max-width: 992px) {
+    
+    .imgentradadeblog {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+
+    .descripcionentradadeblog h1 {
+        font-size: 2rem;
+    }
+
+    
+    .cajacomentarios, .listacomentarios {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+  
+    .imgentradadeblog {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+  
+    .descripcionentradadeblog h1 {
+        font-size: 1.6rem;
+    }
+    .descripcion2entradadeblog h2 {
+        font-size: 1.35rem;
+    }
+
+    
+    .filadedatos {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    
+    .tarjetacomentario {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+  
+    .titulocomentario {
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    
+    .botoncomentarios {
+        width: 100%;
+        padding: 12px;
+    }
 }
