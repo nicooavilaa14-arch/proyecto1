@@ -875,84 +875,430 @@ main{
     text-decoration: underline;
 }
 
-
 /* ==========================================
-   RESPONSIVE
+   TABLETS / PANTALLAS MEDIANAS
 ========================================== */
 
 @media (max-width: 1000px) {
 
-    .login-container {
-        grid-template-columns: 1fr;
-
-        max-width: 700px;
+    main {
+        margin-top: 75px;
     }
 
+    .login-page {
+        padding: 30px 25px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 750px;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    /* --------------------------
+       TARJETA LOGIN
+    -------------------------- */
+
+    .login-card {
+        width: 100%;
+        padding: 35px;
+    }
+
+    /* --------------------------
+       IMAGEN
+    -------------------------- */
+
     .login-visual {
-        min-height: 550px;
+        width: 100%;
+        min-height: 500px;
+    }
+
+    /* --------------------------
+       TARJETA SOBRE IMAGEN
+    -------------------------- */
+
+    .visual-card {
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
     }
 
 }
 
 
+/* ==========================================
+   MÓVILES
+========================================== */
+
 @media (max-width: 600px) {
 
-    .login-page {
-        padding: 20px 15px;
+    main {
+        margin-top: 65px;
     }
 
+    .login-page {
+        width: 100%;
+        min-height: 100vh;
+
+        padding: 20px 12px;
+    }
+
+    /* --------------------------
+       CONTENEDOR
+    -------------------------- */
+
+    .login-container {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* --------------------------
+       TARJETA LOGIN
+    -------------------------- */
+
     .login-card {
-        padding: 25px 20px;
+        width: 100%;
+
+        padding: 25px 18px;
+
+        border-radius: 12px;
+    }
+
+
+    /* --------------------------
+       HEADER LOGIN
+    -------------------------- */
+
+    .admin-badge {
+        font-size: 10px;
+        padding: 5px 10px;
     }
 
     .login-header h1 {
-        font-size: 28px;
+        margin-top: 12px;
+
+        font-size: 26px;
+        line-height: 1.2;
     }
+
+    .login-header p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* --------------------------
+       LOGIN SOCIAL
+    -------------------------- */
 
     .social-login {
         grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        margin-top: 22px;
     }
 
+    .social-btn {
+        height: 43px;
+
+        font-size: 13px;
+    }
+
+
+    /* --------------------------
+       SEPARADOR
+    -------------------------- */
+
+    .separator {
+        margin: 23px 0 18px;
+
+        gap: 10px;
+
+        font-size: 10px;
+    }
+
+
+    /* --------------------------
+       FORMULARIO
+    -------------------------- */
+
+    .form-group {
+        margin-bottom: 17px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+
+        margin-bottom: 7px;
+    }
+
+
+    /* --------------------------
+       INPUTS
+    -------------------------- */
+
+    .input-wrapper input {
+        height: 44px;
+
+        padding: 0 40px;
+
+        font-size: 13px;
+    }
+
+    .input-icon {
+        left: 13px;
+    }
+
+
+    /* --------------------------
+       OPCIONES
+    -------------------------- */
+
     .form-options {
-        align-items: flex-start;
+        display: flex;
 
         flex-direction: column;
 
-        gap: 13px;
+        align-items: flex-start;
+
+        gap: 12px;
+
+        margin: 5px 0 20px;
     }
 
+    .remember {
+        font-size: 13px;
+    }
+
+    .forgot-password {
+        font-size: 13px;
+    }
+
+
+    /* --------------------------
+       BOTÓN
+    -------------------------- */
+
+    .login-btn {
+        height: 44px;
+
+        font-size: 13px;
+    }
+
+
+    /* --------------------------
+       SOPORTE
+    -------------------------- */
+
+    .support {
+        margin-top: 20px;
+
+        padding: 12px;
+
+        font-size: 11px;
+    }
+
+
+    /* ==========================================
+       IMAGEN
+    ========================================== */
+
     .login-visual {
-        min-height: 500px;
+        width: 100%;
+
+        min-height: 450px;
+
+        border-radius: 12px;
+    }
+
+
+    /* --------------------------
+       BADGES
+    -------------------------- */
+
+    .status-badge,
+    .growth-badge {
+        top: 15px;
+
+        padding: 7px 11px;
+
+        font-size: 10px;
     }
 
     .status-badge {
-        top: 20px;
-        left: 20px;
+        left: 15px;
     }
 
     .growth-badge {
-        top: 20px;
-        right: 20px;
+        right: 15px;
     }
 
-    .visual-card {
-        left: 20px;
-        right: 20px;
-        bottom: 20px;
+    .status-dot {
+        width: 7px;
+        height: 7px;
+    }
 
-        padding: 20px;
+
+    /* --------------------------
+       TARJETA SOBRE IMAGEN
+    -------------------------- */
+
+    .visual-card {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+
+        padding: 18px;
+
+        border-radius: 12px;
+    }
+
+    .quote {
+        gap: 7px;
+    }
+
+    .quote > span {
+        font-size: 24px;
     }
 
     .quote p {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .visual-description {
+        margin: 12px 0 15px;
+
         padding-left: 0;
+
+        font-size: 12px;
+    }
+
+
+    /* --------------------------
+       ESTADÍSTICAS
+    -------------------------- */
+
+    .statistics {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        padding: 10px;
+    }
+
+    .statistics span {
+        font-size: 8px;
+    }
+
+    .statistics strong {
+        font-size: 18px;
+    }
+
+
+    /* ==========================================
+       MODAL
+    ========================================== */
+
+    .modal {
+        margin-top: 65px;
+
+        padding: 20px 12px;
     }
 
     .modal-content {
-        padding: 28px 22px;
+        width: 100%;
+
+        max-width: 100%;
+
+        max-height: 85vh;
+
+        padding: 25px 18px;
+
+        border-radius: 13px;
+    }
+
+    .modal-content h2 {
+        font-size: 22px;
+    }
+
+    .modal-description {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   MÓVILES MUY PEQUEÑOS
+========================================== */
+
+@media (max-width: 400px) {
+
+    .login-page {
+        padding: 15px 10px;
+    }
+
+    .login-card {
+        padding: 22px 15px;
+    }
+
+    .login-header h1 {
+        font-size: 23px;
+    }
+
+    .login-header p {
+        font-size: 12px;
+    }
+
+    .social-btn {
+        height: 41px;
+
+        font-size: 12px;
+    }
+
+    .input-wrapper input {
+        height: 42px;
+
+        font-size: 12px;
+    }
+
+    .login-btn {
+        height: 42px;
+
+        font-size: 12px;
+    }
+
+    .login-visual {
+        min-height: 400px;
+    }
+
+    .visual-card {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+
+        padding: 15px;
+    }
+
+    .quote p {
+        font-size: 13px;
+    }
+
+    .visual-description {
+        font-size: 11px;
+    }
+
+    .statistics strong {
+        font-size: 16px;
     }
 
 }
