@@ -70,7 +70,7 @@
     border-radius: 20px;
 
     /* Tamaño del texto */
-    font-size: 9px;
+    font-size: 12px;
 
     /* Negrita */
     font-weight: 700;
@@ -94,7 +94,7 @@
     color: #101828;
 
     /* Tamaño */
-    font-size: 29px;
+    font-size: 39px;
 
     /* Grosor */
     font-weight: 700;
@@ -129,7 +129,7 @@
     color: #667085;
 
     /* Tamaño */
-    font-size: 12px;
+    font-size: 14px;
 
     /* Separación entre líneas */
     line-height: 1.6;
@@ -162,7 +162,7 @@
     color: #344054;
 
     /* Tamaño */
-    font-size: 9px;
+    font-size: 12px;
 }
 
 
@@ -222,7 +222,7 @@
     color: #475467;
 
     /* Tamaño */
-    font-size: 9px;
+    font-size: 12px;
 
     /* Cursor */
     cursor: pointer;
@@ -437,7 +437,7 @@
     align-items: center;
 
     /* Espacio inferior */
-    margin-bottom: 6px;
+    margin-bottom: 9px;
 
     /* Color gris */
     color: #98a2b3;
@@ -470,7 +470,7 @@
     border-radius: 8px;
 
     /* Tamaño */
-    font-size: 7px;
+    font-size: 9px;
 
     /* Negrita */
     font-weight: 700;
@@ -494,7 +494,7 @@
     color: #101828;
 
     /* Tamaño */
-    font-size: 13px;
+    font-size: 20px;
 
     /* Grosor */
     font-weight: 600;
@@ -518,7 +518,7 @@
     color: #667085;
 
     /* Tamaño */
-    font-size: 9px;
+    font-size: 15px;
 
     /* Altura */
     line-height: 1.5;
@@ -551,7 +551,7 @@
     color: #98a2b3;
 
     /* Tamaño */
-    font-size: 7px;
+    font-size: 10px;
 }
 
 
@@ -584,7 +584,7 @@
     border-radius: 12px;
 
     /* Tamaño */
-    font-size: 8px;
+    font-size: 10px;
 
     /* Efecto de desenfoque */
     backdrop-filter: blur(4px);
@@ -660,7 +660,7 @@
     color: #1555b5;
 
     /* Tamaño */
-    font-size: 25px;
+    font-size: 30px;
 
     /* Negrita */
     font-weight: 700;
@@ -684,7 +684,7 @@
     color: #101828;
 
     /* Tamaño */
-    font-size: 11px;
+    font-size: 15px;
 
     /* Cursiva */
     font-style: italic;
@@ -705,7 +705,7 @@
     color: #667085;
 
     /* Tamaño pequeño */
-    font-size: 7px;
+    font-size: 9px;
 
     /* Separación de letras */
     letter-spacing: 0.5px;
