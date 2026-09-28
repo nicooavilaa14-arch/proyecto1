@@ -109,6 +109,108 @@ header{
 .menu .text-seleccionado{
     color: #164da8;
 }
+/*empieza la parte responsive del navar*/
+
+/*MÓVILES */
+@media (max-width: 650px) {
+
+    header {
+        height: 60px;
+        overflow: hidden;
+    }
+
+    .header-contenido {
+        width: 100%;
+        max-width: 100%;
+        height: 60px;
+        padding: 0 10px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    /* LOGO */
+    .logo {
+        height: 60px;
+        flex: 0 1 auto;
+        min-width: 0;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    /* MENU */
+    .menu {
+        height: 60px;
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .menu nav {
+        width: 100%;
+        height: 60px;
+    }
+
+    .menu nav ul {
+        width: 100%;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .menu nav ul li {
+        height: 60px;
+
+        /* Más separación */
+        margin: 0 8px;
+
+        flex: 0 1 auto;
+        min-width: 0;
+    }
+
+    .menu nav ul li a {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .menu-seleccionado::before {
+        height: 3px;
+    }
+
+    .carousel {
+        margin-top: 70px;
+    }
+}
+
+
+/* MÓVILES MUY PEQUEÑOS */
+@media (max-width: 400px) {
+
+    .header-contenido {
+        padding: 0 7px;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    .menu nav ul li {
+        margin: 0 6px;
+    }
+
+    .menu nav ul li a {
+        font-size: 10px;
+    }
+}
+
 /* fin navbar */
 
 /* inicio footer */
