@@ -1,148 +1,238 @@
-*{
+:root {
+    /* RECUADRO PRIMARY */
+    --primary: #0B17A7;
+    --primary-dark: #071366;
+    --primary-blue: #123BE0;
+    --primary-cyan: #4F8FD7;
+
+    /* RECUADRO SECONDARY */
+    --secondary: #16264A;
+    --secondary-dark: #102144;
+    --secondary-blue: #263B68;
+    --secondary-light: #A4BCD4;
+
+    /* RECUADRO TERTIARY */
+    --tertiary: #0793EA;
+    --tertiary-blue: #1196E7;
+    --tertiary-light: #37B1FA;
+    --tertiary-pale: #B7DDF0;
+
+    /* RECUADRO NEUTRAL */
+    --neutral: #AAC7D0;
+    --neutral-blue: #7488AB;
+    --neutral-dark: #5C7197;
+    --neutral-light: #879FBB;
+
+    /* SOMBRAS UTILIZANDO TUS COLORES NEUTRALES Y OSCUROS */
+    --box-shadow-card: 0 4px 12px rgba(16, 33, 68, 0.08), 0 2px 4px rgba(16, 33, 68, 0.04);
+    --box-shadow-form: 0 10px 25px rgba(7, 19, 102, 0.1), 0 4px 12px rgba(7, 19, 102, 0.05);
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.imgentradadeblog{
-    width: 96vw;
+
+
+body {
+    background-color: #f4f7f9;
+    color: var(--secondary);
+    font-family: system-ui, -apple-system, sans-serif;
 }
-.contenedorimgblog{
+
+.imgentradadeblog {
+    width: 96vw;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow-card);
+}
+
+.contenedorimgblog {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
-.descripcionentradadeblog{
+
+.descripcionentradadeblog {
     padding: 20px;
     margin-top: 30px;
-
 }
-.descripcion2entradadeblog{
+
+.descripcionentradadeblog h1 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.descripcion2entradadeblog {
     padding: 20px;
 }
-/* caja comentarios */
-.cajacomentarios{
+
+.descripcion2entradadeblog h2 {
+    color: var(--secondary-blue);
+    margin-bottom: 12px;
+}
+
+
+.cajacomentarios {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #ffffff;
-    border: 1px solid gray;
-    border-radius: 8px ;
+    border: 1px solid var(--secondary-light);
+    border-radius: 8px;
     padding: 24px;
     width: 100%;
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.12);
-
-
+    box-shadow: var(--box-shadow-form);
+    
 }
 
-.titulo{
+.titulo {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 20px;
-
+    color: var(--primary-dark);
+    
 }
-.formulario{
+.btncomentarios{
+    margin-top: 20px;
+}
+.comentariotitulo{
+    margin-top: 20px;
+}
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 16px;
- }
-.filadedatos{
+}
+
+.filadedatos {
     display: flex;
     gap: 16px;
 }
-.requeridocomentario{
+
+.requeridocomentario {
     display: flex;
     flex-direction: column;
     flex: 1;
-
+    gap: 6px;
 }
-.botoncomentario{
-    font-size: 0,9rem;
+
+.requeridocomentario label {
     font-weight: 600;
-    padding: 10px 18px;
+    font-size: 0.9rem;
+    color: var(--secondary-blue);
+}
+
+
+.requeridocomentario input,
+.textareacomentario {
+    padding: 12px;
+    border: 1px solid var(--neutral);
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: var(--secondary-dark);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.requeridocomentario input:focus,
+.textareacomentario:focus {
+    border-color: var(--tertiary);
+    box-shadow: 0 0 0 3px rgba(7, 147, 234, 0.2);
+}
+
+
+.login-btn2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 12px 22px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     align-self: flex-start;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(18, 59, 224, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
-.botoncomentarios:hover{
-    background-color: var(--neutral-blue);
+
+.login-btn2:hover {
+    background-color: var(--primary-dark);
 }
-.textareacomentario{
+
+.textareacomentario {
     resize: vertical;
     min-height: 100px;
 }
 
 .listacomentarios {
-  width: 100%;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 20px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
 }
 
 .subtitulo {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #1a202c;
-  margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 8px;
 }
-
 
 .tarjetacomentario {
-  background-color: #ffffff;
-  border: 1px solid #cbd5e0;
-  border-radius: 8px;
-  padding: 16px;
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border: 1px solid var(--border-color, #e2e8f0); 
+    border-color: var(--secondary-light);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    box-shadow: var(--box-shadow-card);
 }
 
-
-.imgcomentario{
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
+.imgcomentario {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--neutral-light);
 }
-
 
 .contenidocomentario {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-
 .titulocomentario {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
 }
 
 .nombreusuario {
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: #2d3748;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--secondary-dark);
 }
 
 .fechacomentario {
-  font-size: 0.8rem;
-  color: #718096;
+    font-size: 0.8rem;
+    color: var(--neutral-dark);
 }
 
-/* Texto del mensaje */
+
 .textocomentario {
-  font-size: 0.9rem;
-  color: #4a5568;
-  line-height: 1.4;
-  margin: 0;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    line-height: 1.4;
+    margin: 0;
 }
-footer{
-    margin-top: 50px;
-}
+
 @media (min-width: 577px) and (max-width: 992px) {
     
     .imgentradadeblog {
