@@ -108,10 +108,11 @@ header{
 /* inicio footer */
 footer{
     background-color: #164da8;
-    height: 240px;
+    padding: 30px 40px 20px ;
 }
 .descripcionfooter{
    flex-direction: column;
+   padding-top: 20px;
 }
 .containerlogofooter{
     display: flex;
@@ -152,6 +153,7 @@ footer{
     width: 100%;
     text-align: center;
     border-top: 1px solid black;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 15px;
+    margin-top: 45px;
 }
+
