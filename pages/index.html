@@ -64,7 +64,7 @@
 <!--inicio card ✉️--> 
 <div class="container  my-5"> 
     <div class="row g-4"> 
-        <!-- Columna Principal de Contenido (Toma 12 columnas en móvil, 8 en pantallas medianas/grandes) -->
+        <!-- 12 col en cel, 8 en compu -->
         <div class="col-12 col-md-8"> 
             
             <!-- Tarjeta 1: Brasil -->
@@ -98,14 +98,18 @@
             </div> 
         </div> 
 
-        <!-- Barra Lateral / Sidebar (Toma 12 columnas en móvil, 4 en pantallas medianas/grandes) -->
+        <!-- Buscador/ Sidebar 12 col em cel, 4 en compu -->
         <div class="col-12 col-md-4 text-center"> 
             <div class="mb-4">
                 <h3>Busca algo interesante</h3> 
-                <div class="input-group"> 
-                    <input type="text" class="form-control" placeholder="Buscar ..."> 
-                    <span class="input-group-text bg-dark text-white">🔍</span> 
-                </div> 
+                <form class="d-flex">
+                   <input type="text" class="form-control" minlength="1" placeholder="Buscar ..." required> 
+                    <button class="btn btn-primary" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                     </svg>
+                    </button>
+                </form>
             </div>
 
             <div class="categorias border border-3 p-3 my-4 rounded"> 
