@@ -3,3 +3,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+.nosotros{
+    text-align: center;
+    padding: 60px 30px;
+    margin-top: 40px;
+}
+.nosotros h1{
+    font-size: 40px;
+    margin: 25px;
+}
+.descripcion{
+    font-size: 18px;
+}
+.nosotros h2{
+margin: 35px;
+}
+.equipo{
+    display: flex;
+    justify-content: center;
+    gap: 35px ;
+    margin-top: 30pxs;
+}
+.tarjeta{
+    width: 250px;
+    padding: 25px 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(24, 98, 235, 0.555), 0 0 16px rgba(24, 98, 235, 0.555);
+}
+
+.tarjeta img{
+width: 130px;
+height: 130px;
+border-radius: 50%;
+border: 3px solid #4da6d9;
+}
+.tarjeta h3{
+margin: 12px 0 5px;
+font-size: 20px;
+}
+.tarjeta h4{
+    margin: 5px 0 15px;
+    font-size: 16px;
+}
+.tarjeta p{
+    font-size: 14px;
+}

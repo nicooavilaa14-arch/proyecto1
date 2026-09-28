@@ -4,30 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Principal</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <!--🔍 inicio navbar-->
+   <!--🔍 inicio navbar-->
    <header>
     <div class="header-contenido">
         <div class="logo">
-            <h1>nombre<b>logo</b></h1>
+            <h1>Viajes<b>Globales</b></h1>
         </div>
 
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="./galeria.html">galleria</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contacto</a></li>
-                    <li class="menu-seleccionado"><a href="./login.html" class="text-seleccionado">login</a></li>
-                    <li class="menu-seleccionado"><a href="#">suscripción</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="menu-seleccionado"><a href="login.html" class="text-seleccionado">Login</a></li>
+                    <li><a href="#recuperar">Suscripción</a></li>
                 </ul>
             </nav>
         </div>
+        
+    <!--MODAL RECUPERAR CONTRASEÑA-->
+
+    <div id="recuperar" class="modal">
+
+        <div class="modal-content">
+
+            <a href="#" class="modal-close">
+                ×
+            </a>
+
+
+            <div class="recovery-icon"> 
+                😍
+            </div>
+
+
+            <h2>
+               con tu Suscripción apoyas mucho a esta pagina 😍
+            </h2>
+
+
+            <p class="modal-description">
+
+                Sigue estos pasos para confirmar tu Suscripción a la pagina 
+
+            </p>
+
+
+            <!-- PASO 1 -->
+
+            <div class="step">
+
+                <span class="step-number">
+                    1
+                </span>
+
+                <div>
+
+                    <h3>
+                        Ingresa tu correo
+                    </h3>
+
+                    <p>
+                        Escribe tu correo electrónico para recibir 
+                        el mensaje de Suscripción
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASO 2 -->
+
+            <div class="step">
+
+                <span class="step-number">
+                    2
+                </span>
+
+                <div>
+
+                    <h3>
+                        Revisa tu correo
+                    </h3>
+
+                    <p>
+                        Recibirás las instrucciones y acepta
+                        los términos para confirmar la Suscripción.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASO 3 -->
+
+            <div class="step">
+
+                <span class="step-number">
+                    3
+                </span>
+
+                <div>
+
+                    <h3>
+                        refresca la pagina 
+                    </h3>
+
+                    <p>
+                        una vez aceptado los términos y confirmado 
+                        la Suscripción refresca la pagina para notar los cambios
+                        
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="recovery-form">
+
+              
+                <form action="login.html" method="get">
+
+                <div class="form-group">
+
+                    <div class="label-row">
+
+                        <label for="email">
+                            Correo electrónico
+                        </label>
+                    </div>
+
+                    <div class="input-wrapper">
+                       <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ponga su correo electrónico aquí"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+               <br>
+                <button type="submit" class="login-btn2">
+
+                    confirmar correo electrónico
+
+                    <span>→</span>
+
+                </button>
+
+
+            <a href="#" class="back-login">
+                ← Volver al inicio 
+            </a>
+
+           </div>
+
+          </div>
+
+       </div>
     </div>
    </header>
    <!--fin navbar 🔍-->
@@ -41,13 +192,13 @@
   </div>
   <div class="carousel-inner bg-dark">
     <div class="carousel-item active">
-      <img src="../assets/images/imagenes_galleria/machupicchu.jpg" class="d-block w-100" style="height: 500px; object-fit: contain;" alt="...">
+      <img src="../assets/images/images slider/descarga (4).jpg" class="d-block w-100 h-100" style="object-fit: contain;" alt="...">
     </div>
     <div class="carousel-item bg-dark">
-      <img src="../assets/images/imagenes_galleria/montefuij2.jpeg" class="d-block w-100" style="height: 500px; object-fit: contain;" alt="...">
+      <img src="../assets/images/images slider/descarga (6).jpg" class="d-block w-100 h-100" style=" object-fit: contain;" alt="...">
     </div>
     <div class="carousel-item bg-dark">
-      <img src="../assets/images/imagenes_galleria/catarratas2.jpeg" class="d-block w-100" style="height: 500px; object-fit: contain;" alt="...">
+      <img src="../assets/images/images slider/descarga (5).jpg" class="d-block w-100 h-100" style=" object-fit: contain;" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -60,58 +211,76 @@
   </button>
 </div>
 <!-- FIN CARRUSEL 🎠-->
-  <!--inico card ✉️-->
-    <div class="container my-5">
-  <div class="row">
-    <div class="col-8 ">
-        <div class="  text-center bg-secondary mb-3">
-      <img class="col-7 border border-5 " src="../assets/images.jpg" alt="">
-      <div class="text-center py-5 ">
-        <h3>subio el dolar en argentina</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo dicta corrupti debitis amet modi corporis. Consequuntur, harum incidunt? Voluptas, ut omnis. Rerum dolores iste ipsam explicabo. Accusamus, fugit aliquam.</p>
-        <button><a href="./entrada.html">ver mas</a></button>
-      </div>
-    </div>
-        <div class="text-center  bg-secondary mb-3 ">
-      <img class="col-7  border border-5" src="../assets/images.jpg" alt="">
-      <div class="text-center py-5">
-        <h3>subio el dolar en argentina</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo dicta corrupti debitis amet modi corporis. Consequuntur, harum incidunt? Voluptas, ut omnis. Rerum dolores iste ipsam explicabo. Accusamus, fugit aliquam.</p>
-        <button>ver mas</button>
-      </div>
-    </div>
-        <div class="  text-center  bg-secondary">
-      <img class="col-7  border border-5" src="../assets/images.jpg" alt="">
-      <div class="text-center py-5">
-        <h3>subio el dolar en argentina</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo dicta corrupti debitis amet modi corporis. Consequuntur, harum incidunt? Voluptas, ut omnis. Rerum dolores iste ipsam explicabo. Accusamus, fugit aliquam.</p>
-        <button>ver mas</button>
-      </div>
-    </div>
-    </div>
-    <div class="col-4 text-center ">
-      <h3>buscar</h3>
-      <div class="input-group">
-          <input type="text" class="form-control" placeholder="Buscar noticia...">
-          <span class="input-group-text bg-dark text-white  ">
-            &#128269;
-         </span>
-      </div>
-      <div class="categorias border border-5 my-5">
-        <h3>categorias</h3>
-        <ul class="text-start">
-            <li> <a href="https://google.com">Buscador global></li>
-            <li><a href="https://wikipedia.org">Enciclopedia libre</a></li>
-            <li><a href="https://github.com">Repositorio de código</a></li>
-            <li><a href="https://youtube.com">Videos y tutoriales</a></li>
-            <li> <a href="https://figma.com">Diseño e interfaz</a></li>
-        </ul>
-      </div>
-      <img class="imgpublicidad w-100 h-50" src="../assets/images/image_d906167a.jpg" alt="">
-    </div>
-  </div>
-</div>
+<!--inicio card ✉️--> 
+<div class="container  my-5"> 
+    <div class="row g-4"> 
+        <!-- 12 col en cel, 8 en compu -->
+        <div class="col-12 col-md-8"> 
+            
+            <!-- Tarjeta 1: Brasil -->
+            <div class="text-center mb-5 border-bottom pb-4"> 
+                <img class="img-fluid w-100 rounded" src="../assets/images/imagenes_galleria/brazil2.jpeg" alt="Cristo Redentor en Brasil"> 
+                <div class="text-center py-4"> 
+                    <h3>Brasil: Donde los brazos del Cristo abrazan al mundo</h3> 
+                    <p>Hay imágenes que se quedan grabadas en la retina mucho antes de que pongas un pie en el avión. La silueta del Cristo Redentor, recortada contra el cielo azul de Río de Janeiro y custodiando la inmensidad del océano Atlántico, es una de ellas.</p> 
+                    <a class="btn btn-outline-primary linkvermas" href="./entrada.html">Ver Más</a>
+                </div> 
+            </div> 
+
+            <!-- Tarjeta 2: Japón -->
+            <div class="text-center mb-5 border-bottom pb-4"> 
+                <img class="img-fluid w-100 rounded" src="../assets/images/imagenes_galleria/montefuij2.jpeg" alt="Monte Fuji en Japón"> 
+                <div class="text-center py-4"> 
+                    <h3>El latido sagrado de Japón: Un viaje a los pies del Monte Fuji</h3> 
+                    <p>Hay siluetas que definen la identidad de una nación entera, y la del Monte Fuji es, sin duda, la más perfecta de todas. Con su cono simétrico coronado de nieve eterna y su presencia imponente que parece vigilar el horizonte japonés, este volcán sagrado no es solo un accidente geográfico; es el alma de Japón hecha piedra y misterio.</p> 
+                    <a class="btn btn-outline-primary linkvermas" href="./error404.html">Ver Más</a>
+                </div> 
+            </div> 
+
+            <!-- Tarjeta 3: Iguazú -->
+            <div class="text-center mb-4"> 
+                <img class="img-fluid w-100 rounded" src="../assets/images/imagenes_galleria/catarratas2.jpeg" alt="Cataratas del Iguazú"> 
+                <div class="text-center py-4"> 
+                    <h3>Una aventura total en las Cataratas del Iguazú</h3> 
+                    <p>Existen lugares en el mundo que te recuerdan lo pequeños que somos, pero ninguno lo hace con la fuerza indomable de las Cataratas del Iguazú. Mucho antes de verlas, la experiencia empieza con el oído: un zumbido sordo y lejano que reverberbera en el pecho a medida que te adentras en la densa selva misionera.</p> 
+                    <a class="btn btn-outline-primary linkvermas" href="./error404.html">Ver Más</a>
+                </div> 
+            </div> 
+        </div> 
+
+        <!-- Buscador/ Sidebar 12 col em cel, 4 en compu -->
+        <div class="col-12 col-md-4 text-center"> 
+            <div class="mb-4">
+                <h3>Busca algo interesante</h3> 
+                <form class="d-flex">
+                   <input type="text" class="form-control" minlength="1" placeholder="Buscar ..." required> 
+                    <button class="btn btn-primary" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                     </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="categorias border border-3 p-3 my-4 rounded"> 
+                <h3 class="mb-3">Categorías</h3> 
+                <ul class="text-start list-unstyled ps-2"> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Consejos viajeros</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Aventuras y naturaleza</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Hoteles y hospedajes</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Viajes en familia</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Videos de viajes</a></li> 
+                </ul> 
+            </div> 
+
+            <div class="mt-4">
+                <img class="img-fluid w-100 rounded" src="../assets/imagen publicidad/image_ecb66e42.jpeg" alt="Publicidad"> 
+            </div>
+        </div> 
+    </div> 
+</div> 
 <!--card final-->
+
 </main>
 
 <!--👣 inicio foter -->
@@ -120,7 +289,7 @@
   <div class="row">
     <div class="col-4  ">
       <div class="containerlogofooter">
-        <img class="logofooter" src="./assets/images.jpg" alt="">
+        <img class="logofooter" src="../assets/images/imagen login/logoviajesglobales-removebg-preview.png" alt="">
       <h2>ECOVIDA</h2> 
       </div>
       <div class="descripcionfooter">

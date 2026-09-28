@@ -13,11 +13,12 @@
     /* Ocupa todo el ancho disponible */
     width: 100%;
 
+
     /* Color de fondo general */
     background: #f7f9fc;
 
     /* Espacio superior */
-    padding-top: 140px;
+    padding-top: 100px;
 
     /* Espacio inferior */
     padding-bottom: 0;
@@ -33,7 +34,7 @@
 
     /* Ancho máximo del contenido */
     width: 100%;
-    max-width: 760px;
+    max-width: 800px;
 
     /* Centrar horizontalmente */
     margin: 0 auto;
@@ -69,7 +70,7 @@
     border-radius: 20px;
 
     /* Tamaño del texto */
-    font-size: 9px;
+    font-size: 12px;
 
     /* Negrita */
     font-weight: 700;
@@ -93,7 +94,7 @@
     color: #101828;
 
     /* Tamaño */
-    font-size: 29px;
+    font-size: 39px;
 
     /* Grosor */
     font-weight: 700;
@@ -128,7 +129,7 @@
     color: #667085;
 
     /* Tamaño */
-    font-size: 12px;
+    font-size: 14px;
 
     /* Separación entre líneas */
     line-height: 1.6;
@@ -161,7 +162,7 @@
     color: #344054;
 
     /* Tamaño */
-    font-size: 9px;
+    font-size: 12px;
 }
 
 
@@ -221,7 +222,7 @@
     color: #475467;
 
     /* Tamaño */
-    font-size: 9px;
+    font-size: 12px;
 
     /* Cursor */
     cursor: pointer;
@@ -367,7 +368,7 @@
 
 /* Imagen 2 */
 .art-card:nth-child(2) img {
-    height: 285px;
+    height: 400px;
 }
 
 
@@ -379,7 +380,7 @@
 
 /* Imagen 4 */
 .art-card:nth-child(4) img {
-    height: 300px;
+    height: 400px;
 }
 
 
@@ -391,7 +392,7 @@
 
 /* Imagen 6 */
 .art-card:nth-child(6) img {
-    height: 300px;
+    height: 400px;
 }
 
 
@@ -436,7 +437,7 @@
     align-items: center;
 
     /* Espacio inferior */
-    margin-bottom: 6px;
+    margin-bottom: 9px;
 
     /* Color gris */
     color: #98a2b3;
@@ -469,7 +470,7 @@
     border-radius: 8px;
 
     /* Tamaño */
-    font-size: 7px;
+    font-size: 9px;
 
     /* Negrita */
     font-weight: 700;
@@ -493,7 +494,7 @@
     color: #101828;
 
     /* Tamaño */
-    font-size: 13px;
+    font-size: 20px;
 
     /* Grosor */
     font-weight: 600;
@@ -517,7 +518,7 @@
     color: #667085;
 
     /* Tamaño */
-    font-size: 9px;
+    font-size: 15px;
 
     /* Altura */
     line-height: 1.5;
@@ -550,7 +551,7 @@
     color: #98a2b3;
 
     /* Tamaño */
-    font-size: 7px;
+    font-size: 10px;
 }
 
 
@@ -583,7 +584,7 @@
     border-radius: 12px;
 
     /* Tamaño */
-    font-size: 8px;
+    font-size: 10px;
 
     /* Efecto de desenfoque */
     backdrop-filter: blur(4px);
@@ -642,8 +643,6 @@
 
     /* Centrar contenido */
     text-align: center;
-
-    margin-bottom: 30px;
 }
 
 
@@ -661,7 +660,7 @@
     color: #1555b5;
 
     /* Tamaño */
-    font-size: 25px;
+    font-size: 30px;
 
     /* Negrita */
     font-weight: 700;
@@ -685,7 +684,7 @@
     color: #101828;
 
     /* Tamaño */
-    font-size: 11px;
+    font-size: 15px;
 
     /* Cursiva */
     font-style: italic;
@@ -706,9 +705,84 @@
     color: #667085;
 
     /* Tamaño pequeño */
-    font-size: 7px;
+    font-size: 9px;
 
     /* Separación de letras */
     letter-spacing: 0.5px;
 }
 
+/* =====================================================
+   RESPONSIVE - GALERÍA
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   DISPOSITIVOS PEQUEÑOS
+   Celulares
+   1 imagen por fila
+   ----------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px 30px;
+    }
+
+    .gallery-intro {
+        padding: 0 15px;
+    }
+
+    .gallery-intro h1 {
+        font-size: 24px;
+    }
+
+    .gallery-intro p {
+        font-size: 11px;
+    }
+
+    .gallery-filters {
+        padding: 0 15px;
+        margin-top: 25px;
+    }
+
+    .filter {
+        font-size: 9px;
+        padding: 6px 10px;
+    }
+
+}
+
+
+/* -----------------------------------------------------
+   DISPOSITIVOS MEDIANOS
+   Tablets / pantallas medianas
+   3 imágenes por fila
+   ----------------------------------------------------- */
+
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+        padding: 0 15px 35px;
+    }
+
+}
+
+
+/* -----------------------------------------------------
+   DISPOSITIVOS GRANDES
+   Computadoras
+   4 imágenes por fila
+   ----------------------------------------------------- */
+
+@media (min-width: 1001px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+}
