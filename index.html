@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Principal</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../proyecto1/pages/login.css">
+    <link rel="stylesheet" href="./pages/login.css">
     <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
@@ -22,10 +22,10 @@
             <nav>
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="../proyecto1/pages/galeria.html">Galería</a></li>
-                    <li><a href="../proyecto1/pages/acercadenosotros.html">Nosotros</a></li>
-                    <li><a href="../proyecto1/pages/contacto.html">Contacto</a></li>
-                    <li class="menu-seleccionado"><a href="../proyecto1/pages/login.html" class="text-seleccionado">Login</a></li>
+                    <li><a href="./pages/galeria.html">Galería</a></li>
+                    <li><a href="./pages/acercadenosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li class="menu-seleccionado"><a href="./pages/login.html" class="text-seleccionado">Login</a></li>
                     <li><a href="#recuperar">Suscripción</a></li>
                 </ul>
             </nav>
@@ -212,9 +212,10 @@
 </div>
 <!-- FIN CARRUSEL 🎠-->
 <!--inicio card ✉️--> 
-<div class="container  my-5"> 
+<div class="container my-5"> 
     <div class="row g-4"> 
-        <!-- 12 col en cel, 8 en compu -->
+        
+        <!-- COLUMNA IZQUIERDA: 12 col en cel, 8 en compu -->
         <div class="col-12 col-md-8"> 
             
             <!-- Tarjeta 1: Brasil -->
@@ -233,7 +234,7 @@
                 <div class="text-center py-4"> 
                     <h3>El latido sagrado de Japón: Un viaje a los pies del Monte Fuji</h3> 
                     <p>Hay siluetas que definen la identidad de una nación entera, y la del Monte Fuji es, sin duda, la más perfecta de todas. Con su cono simétrico coronado de nieve eterna y su presencia imponente que parece vigilar el horizonte japonés, este volcán sagrado no es solo un accidente geográfico; es el alma de Japón hecha piedra y misterio.</p> 
-                    <a class="btn btn-outline-primary linkvermas" href="./error404.html">Ver Más</a>
+                    <a class="btn btn-outline-primary linkvermas" href="./pages/error404.html">Ver Más</a>
                 </div> 
             </div> 
 
@@ -243,45 +244,69 @@
                 <div class="text-center py-4"> 
                     <h3>Una aventura total en las Cataratas del Iguazú</h3> 
                     <p>Existen lugares en el mundo que te recuerdan lo pequeños que somos, pero ninguno lo hace con la fuerza indomable de las Cataratas del Iguazú. Mucho antes de verlas, la experiencia empieza con el oído: un zumbido sordo y lejano que reverberbera en el pecho a medida que te adentras en la densa selva misionera.</p> 
-                    <a class="btn btn-outline-primary linkvermas" href="./error404.html">Ver Más</a>
+                    <a class="btn btn-outline-primary linkvermas" href="./pages/error404.html">Ver Más</a>
                 </div> 
             </div> 
+
+            <!-- BOTONES PAGINACIÓN  -->
+            <nav aria-label="Paginación de artículos" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <span class="page-link" aria-hidden="true">&laquo;</span>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Siguiente">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
         </div> 
 
-        <!-- Buscador/ Sidebar 12 col em cel, 4 en compu -->
+        <!-- COLUMNA DERECHA: Buscador/ Slider 12 col en cel, 4 en compu -->
         <div class="col-12 col-md-4 text-center"> 
             <div class="mb-4">
                 <h3>Busca algo interesante</h3> 
                 <form class="d-flex w-100">
-                <div class="input-group">
-                     <input type="text" class="form-control" minlength="1" placeholder="Buscar ..." required>
-                     <button class="btn btn-primary" type="submit">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                         </svg>
-                     </button>
-               </div>
-               </form>
-
+                    <div class="input-group">
+                         <input type="text" class="form-control" minlength="1" placeholder="Buscar ..." required>
+                         <button class="btn btn-primary" type="submit">
+                             <svg xmlns="http://w3.org" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                             </svg>
+                         </button>
+                    </div>
+                </form>
             </div>
 
             <div class="categorias border border-3 p-3 my-4 rounded"> 
                 <h3 class="mb-3">Categorías</h3> 
                 <ul class="text-start list-unstyled ps-2"> 
-                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Consejos viajeros</a></li> 
-                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Aventuras y naturaleza</a></li> 
-                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Hoteles y hospedajes</a></li> 
-                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Viajes en familia</a></li> 
-                    <li class="mb-2"><a class="text-decoration-none" href="./error404.html">Videos de viajes</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./pages/error404.html">Consejos viajeros</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./pages/error404.html">Aventuras y naturaleza</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./pages/error404.html">Hoteles y hospedajes</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./pages/error404.html">Viajes en familia</a></li> 
+                    <li class="mb-2"><a class="text-decoration-none" href="./pages/error404.html">Videos de viajes</a></li> 
                 </ul> 
             </div> 
 
             <div class="mt-4">
                 <img class="img-fluid w-100 rounded" src="../assets/imagen publicidad/image_ecb66e42.jpeg" alt="Publicidad"> 
             </div>
-        </div> 
-    </div> 
-</div> 
+        </div> <!-- CIERRE EXACTO DE LA COLUMNA DE LA BARRA LATERAL (col-md-4) -->
+
+    </div> <!-- CIERRE EXACTO DE LA FILA (ROW) -->
+</div> <!-- CIERRE EXACTO DEL CONTENEDOR (CONTAINER) -->
 <!--card final-->
 
 </main>
