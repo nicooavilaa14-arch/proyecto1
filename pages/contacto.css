@@ -25,6 +25,8 @@
 
 .mapa, .formulario { 
   width: 100%; 
+  display: flex;
+  flex-direction: column;
 } 
 
 .mapa iframe {

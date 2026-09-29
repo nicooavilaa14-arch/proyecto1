@@ -18,7 +18,7 @@
     background: #f7f9fc;
 
     /* Espacio superior */
-    padding-top: 100px;
+    padding-top: 75px;
 
     /* Espacio inferior */
     padding-bottom: 0;
@@ -643,6 +643,10 @@
 
     /* Centrar contenido */
     text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
 
