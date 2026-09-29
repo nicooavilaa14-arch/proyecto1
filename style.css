@@ -235,6 +235,7 @@ footer h2, footer h3 {
     justify-content: center;
     align-items: center;
     gap: 10px; 
+    
 }
 
 .logofooter {
@@ -247,6 +248,7 @@ footer h2, footer h3 {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 25px;
 }
 
 .form-subscripcion input {
@@ -258,7 +260,7 @@ footer h2, footer h3 {
     max-width: 250px;
 }
 
-.form-subscripcion button {
+.buttonfooter {
     padding: 8px 15px;
     border-radius: 4px;
     border: none;
@@ -268,7 +270,7 @@ footer h2, footer h3 {
     transition: background 0.3s;
 }
 
-.form-subscripcion button:hover {
+.buttonfooter:hover {
     background-color: #218838;
 }
 
